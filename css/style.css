@@ -18,7 +18,7 @@ body
   padding 100px 15px 15px 5px;
   text-align:center;
   color:black;
-  background:url(https://github.com/AkshayaKL/notetake/blob/master/background.jpg);
+  background:url(../background.jpg);
   
 }
 #main{
@@ -80,7 +80,7 @@ li
 {
 width:263px;
 height:252px;
-background:url(https://github.com/AkshayaKL/notetake/blob/master/notepic.png);
+background:url(../notepic.png);
 text-align:center;
 
 }
