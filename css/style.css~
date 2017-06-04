@@ -1,0 +1,86 @@
+
+
+h1 {
+  background-color: rgb(1,1,1);
+  padding: 1000 px;
+  font-size: 400%;
+  border: 80px solid brown;
+  color:white;
+  text-align:center;
+  
+}
+ 
+body
+{
+  background-color:rgb(0,0,0);
+  margin:800 px;
+  border:80px cyan;
+  padding 100px 15px 15px 5px;
+  text-align:center;
+  color:black;
+  background:url(/home/home/Desktop/task/background.jpg);
+  
+}
+#main{
+  color:brown;
+  width:600px;
+  background-color:rgb(0,0,0);
+  text-shadow:2px 2px 3px purple;
+
+  padding:10px 15px 15px 5px;
+  font-size:40px; 
+  border:80px;
+  cursor:pointer;
+  
+}
+#main:hover {background-color:white;}
+#main:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+aside
+{
+  text-align:right;
+}
+p
+{
+  color:white;
+}
+#fieldd
+{
+background-color:black;
+color:yellow;
+}
+img
+{
+top:300 px;
+right::800px;
+width:87px;
+
+}
+img:hover
+{
+zoom:150%;
+}
+li:hover
+{
+ zoom:150%; 
+  transform:translateX(4px);
+}
+.hidden
+{
+visibility:hidden;
+}
+ul
+{
+display:inline-block;
+}
+li
+{
+width:263px;
+height:252px;
+background:url(/home/home/Desktop/task/notepic.png);
+text-align:center;
+
+}
