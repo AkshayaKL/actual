@@ -76,5 +76,5 @@ ednot.onclick=function()
 function ok()
 {
 document.getElementById(ans).innerHTML="<br />"+"<br />"+input.value;
-actualcontent[ans-1]=input.value; 
+actualnote[ans-1]=input.value; 
 }
