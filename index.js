@@ -1,3 +1,4 @@
+var ans;
 var addnote = document.querySelector('.add');
 var  actualnote=[];
 var count=0;
@@ -21,7 +22,8 @@ var deleteval= (prompt("which one?")-1);
   
 }
 var see=document.querySelector('.see');
-see.onclick=function()
+see.onclick=function(){seez();}
+function seez()
 {
   
   
@@ -43,11 +45,36 @@ see.onclick=function()
 
 
   }
- 
-
+var editz;
+var ok; 
+var input;
 var ednot=document.querySelector('.edit');
 ednot.onclick=function()
+{seez();
+  ans=prompt("which one");
+    input=document.createElement("input");
+         input.type="text";
+           input.id="notepastez";
+               input.value=actualnote[ans-1];
+                    
+                        document.getElementById(ans).appendChild(input);
+                                buttonz=document.createElement("button");
+                                 buttonz.onclick=function(){ok();}
+
+                                  buttonz.id="but"
+                                  
+                                  document.getElementById(ans).textContent=" ";  
+                                 document.getElementById(ans).appendChild(input);  
+                                 document.getElementById(ans).appendChild(buttonz); 
+                                 buttonz.innerHTML="ok?";                                                      
+  
+  
+  
+
+
+}
+function ok()
 {
-var ans=prompt("Which note?");
-document.getElementById(ans).innerHTML="<br>"+"<br>"+prompt("Type in your new note");
+document.getElementById(ans).innerHTML="<br />"+"<br />"+input.value;
+actualcontent[ans-1]=input.value; 
 }
