@@ -6,7 +6,7 @@ var a;
 var buttonnode;
 addnote.onclick=function()
 { var note=document.getElementById("fielddd").value; 
- alert(note);
+  
  actualnote.push(note);
  count++;
  
@@ -17,7 +17,7 @@ deletenote.onclick=function()
 var deleteval= (prompt("which one?")-1);
    actualnote.splice(deleteval,1);
   count--;
-  alert(actualnote);
+  
  document.getElementById(deleteval+1).className='hidden';
 
  document.getElementById(count+1).innerHTML=" ";
