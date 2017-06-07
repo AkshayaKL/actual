@@ -9,6 +9,7 @@ addnote.onclick=function()
  alert(note);
  actualnote.push(note);
  count++;
+ 
 }
 var deletenote=document.querySelector('.delete') ;
 deletenote.onclick=function()
@@ -18,7 +19,10 @@ var deleteval= (prompt("which one?")-1);
   count--;
   alert(actualnote);
  document.getElementById(deleteval+1).className='hidden';
-   
+
+ document.getElementById(count+1).innerHTML=" ";
+  
+ seez(); 
   
 }
 var see=document.querySelector('.see');
@@ -29,20 +33,25 @@ function seez()
   
  for(var t=0;t<count;t++)
  { 
-   
+     if(t>5)
+    {
+      var newnote=document.createElement("li");
+       newnote.id=t+1;
+          newnote.className="hidden";
+           document.getElementById("notes").appendChild(newnote);
+         }
+
     
-   document.getElementById(t+1).innerHTML="<br>"+"<br>"+(actualnote[t]);
+   document.getElementById(t+1).innerHTML="<br>"+"<br>"+actualnote[t];
    document.getElementById(t+1).className='unhidden';
  
-
-
+ 
 
    
   
  }
 
- document.getElementById(t+1).innerHTML=" ";
-
+ 
 
   }
 var editz;
